@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+</style>
+</head>
+<body>
+
+  <h1>Course java script of zero</h1>
+
+<script>
+//page of references MDN Mozilla 
+
+//let varable local//var variable global
+  let one = 'one';
+  let two = 'two';;
+  let three = 'three';
+  let four  = 'four';
+
+  // `` ${} contatena los datos ya no es necesario usar +
+
+  let ul = `<ul>
+    <li>${one}</li>
+    <li>${two}</li>
+    <li>${three}</li>
+    <li>${four}</li>
+    </ul>`;
+    //console.log(ul); 
+
+    //function declaret
+    function thisIsFunction(){
+      console.log('one'); 
+      console.log('two'); 
+      console.log('thre'); 
+      console.log('four'); 
+      return "return value function";
+    }
+
+  //invoquet function
+   let printFunction = thisIsFunction();
+
+  // console.log(printFunction);
+
+   //arrays
+   let a = 0;
+   const array = Array(50).fill(a);
+   //console.log(array);
+
+   const e = new Array(1,2,3,true,false);
+   e.push("nueva variable al array");
+   e.pop();//delete ultimate positition
+
+  e.forEach(function(f,idx){
+   console.log(`<li id="${idx}">${f}</li>`);
+  });
+
+  //objects 
+  const obj = {
+      name:"Brian",
+      last_name:"Castañeda",
+      hobbies:["read, whatch movies, take english class"],
+      contact:{
+        cell_phone:33445566778899,
+        email:"alex029610@gmail.com",
+        facebook:"webDeveloper96"
+      },
+      hi:function(){
+        console.log(`Hello!`);
+      },
+      howAreYou:function(){
+        console.log(`How are you ${this.name} ${this.last_name} ?`); 
+      }
+
+  }
+  obj.hi();
+  obj.howAreYou();
+
+</script>
+
+</body>
+</html>
